@@ -11,6 +11,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#bloc-4-portfolio img {
+  width: 300px;
+  height: 250px;
+  margin: auto;
+}
+
+#articles {
+  padding: 50px 350px;
+}
+
+#articles h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#articles a {
+  font-size: 20px;
+  color: #575757;
+}
+
+#articles a:hover {
+  text-decoration: none;
+  color: rgb(245, 158, 118);
+}
+
+#articles h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+#actualites {
+  padding-bottom: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+#actualites h2 {
+  padding-bottom: 20px;
+}
+
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -19,7 +58,6 @@ button {
 }
 
 a:hover {
-  text-decoration: none;
   cursor: pointer;
   transform: scale(1.15);
 }
@@ -106,7 +144,7 @@ a:hover {
 }
 
 .d-bloc {
-  color: rgba(255, 255, 255, 0.7);
+  background-color: rgb(245, 158, 118);
 }
 
 .d-bloc button:hover {
@@ -122,9 +160,6 @@ a:hover {
 }
 
 .d-bloc .divider-h span {
-  border-color: #333333;
-}
-.d-bloc .divider-h span:hover {
   border-color: #333333;
 }
 
@@ -159,7 +194,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(245, 158, 118);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -204,12 +239,36 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0);
+}
+
+.col-sm-6 p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#form_1 {
+  padding-bottom: 30px;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+.form-control {
+  width: 500px;
+  height: 30px;
 }
 
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
   color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+#message {
+  width: 500px;
+  height: 300px;
 }
 
 .l-bloc .icon-round,
@@ -258,7 +317,7 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(245, 158, 118);
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -345,7 +404,6 @@ a:hover {
 .nav > li a:focus {
   background: transparent;
   text-decoration: none;
-  color: #f87a40;
 }
 
 .navbar-toggle {
@@ -658,16 +716,16 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
   font-family: "roboto";
   font-weight: 400;
   color: #575757 !important;
 }
-h1 {
+#animation {
   animation: 2s slide forwards;
   animation-delay: 1s;
   opacity: 0;
+  transform: scale(1);
 }
 
 @keyframes slide {
@@ -679,6 +737,7 @@ h1 {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    transform: scale(1.15);
     opacity: 1;
   }
 }
@@ -688,7 +747,7 @@ h2 {
 }
 h2 span {
   padding-bottom: 5px;
-  border-bottom: 5px solid #f87a40;
+  border-bottom: 5px solid rgb(245, 158, 118);
 }
 
 .container {
@@ -712,13 +771,11 @@ h2 span {
   max-width: 520px;
   margin: auto auto auto auto;
 }
-
-p {
-  font-size: 15px;
+.col-sm-12 p {
+  font-size: 18px;
 }
 
 .tight-width-whitespace {
-  max-width: 600px;
   margin: auto auto;
 }
 
@@ -755,10 +812,7 @@ h3 {
   box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-  color: #333333 !important;
-}
-
+h1,
 h4 {
   color: #333333 !important;
 }
@@ -787,8 +841,10 @@ h4 {
 }
 
 .black-background {
-  background-color: #364577;
-  padding: 40px 40px 40px 40px;
+  background-color: #c2b9b9;
+  opacity: 0.8;
+  padding: 40px 40px;
+  width: 600px;
 }
 
 .bold-link {
@@ -814,12 +870,13 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-  background: #f87a40;
+  background: rgb(245, 158, 118);
   color: #ffffff !important;
+  border: 2px solid rgb(245, 158, 118);
 }
 
 .btn-atomic-tangerine:hover {
-  background: #f87a40 !important;
+  background: rgb(245, 158, 118) !important;
   color: white !important;
 }
 
@@ -829,15 +886,15 @@ h4 {
 }
 
 .ltc-white:hover {
-  color: #cccccc !important;
+  color: rgb(245, 158, 118) !important;
 }
 
 .ltc-atomic-tangerine {
-  color: #f87a40 !important;
+  color: rgb(245, 158, 118) !important;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #f87a40 !important;
+  color: rgb(245, 158, 118) !important;
 }
 
 .icon-dark-slate-blue {
@@ -847,6 +904,7 @@ h4 {
 
 .bg-dots-bg {
   background-image: url("img/dots-bg.png");
+  background-color: rgb(245, 158, 118);
 }
 
 .bg-lines-h2-bg {
