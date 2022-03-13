@@ -15,11 +15,13 @@ a,
 button {
   transition: all 0.3s ease-in-out;
   outline: none !important;
+  transform: scale(1);
 }
 
 a:hover {
   text-decoration: none;
   cursor: pointer;
+  transform: scale(1.15);
 }
 
 #page-loading-blocs-notifaction {
@@ -35,7 +37,7 @@ a:hover {
   width: 100%;
   clear: both;
   background: 50% 50% no-repeat;
-  padding: 0 50px;
+  padding: 0px 50px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,7 +51,7 @@ a:hover {
 }
 
 .bloc-lg {
-  padding: 100px 50px;
+  padding: 70px 50px;
 }
 
 .bloc-md {
@@ -57,7 +59,7 @@ a:hover {
 }
 
 .bloc-sm {
-  padding: 20px 50px;
+  padding: 40px 50px;
 }
 
 .bg-center,
@@ -87,7 +89,7 @@ a:hover {
 .bloc-bg-texture::before {
   content: "";
   background-size: 2px 2px;
-  position: absolute;
+
   top: 0;
   bottom: 0;
   left: 0;
@@ -120,7 +122,10 @@ a:hover {
 }
 
 .d-bloc .divider-h span {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: #333333;
+}
+.d-bloc .divider-h span:hover {
+  border-color: #333333;
 }
 
 .d-bloc .a-btn,
@@ -137,7 +142,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-  color: rgba(255, 255, 255, 0.6);
+  color: #575757;
 }
 
 .d-bloc .a-btn:hover,
@@ -339,7 +344,8 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
   background: transparent;
-  text-decoration: underline;
+  text-decoration: none;
+  color: #f87a40;
 }
 
 .navbar-toggle {
@@ -658,6 +664,32 @@ a {
   font-weight: 400;
   color: #575757 !important;
 }
+h1 {
+  animation: 2s slide forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-size: 25px;
+}
+h2 span {
+  padding-bottom: 5px;
+  border-bottom: 5px solid #f87a40;
+}
 
 .container {
   max-width: 1000px;
@@ -687,16 +719,11 @@ p {
 
 .tight-width-whitespace {
   max-width: 600px;
-  margin: auto auto auto auto;
-}
-
-.h1 {
-  font-size: 25px;
-  font-family: "Open Sans";
+  margin: auto auto;
 }
 
 .cta-hero {
-  margin-top: 22px;
+  margin-top: 35px;
   color: #ffffff !important;
   text-transform: uppercase;
   padding: 12px 28px 12px 28px;
@@ -706,7 +733,7 @@ p {
 
 .social {
   max-width: 400px;
-  margin: auto auto auto auto;
+  margin: auto auto;
 }
 
 h2 {
@@ -724,7 +751,7 @@ h3 {
 
 .med-width-whitespace {
   max-width: 800px;
-  margin: auto auto auto auto;
+  margin: auto auto;
   box-shadow: 0px 0px 0px #000000;
 }
 
@@ -742,7 +769,8 @@ h4 {
 }
 
 .white {
-  color: #ffffff !important;
+  color: #333333 !important;
+  padding-bottom: 20px;
 }
 
 .portfolio-thumb {
@@ -759,7 +787,7 @@ h4 {
 }
 
 .black-background {
-  background-color: rgba(165, 147, 99, 0.7);
+  background-color: #364577;
   padding: 40px 40px 40px 40px;
 }
 
@@ -777,11 +805,12 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-  background-color: rgb(190, 185, 185);
+  background-color: #ffffff;
 }
 
 .tc-white {
-  color: #f87a40 !important;
+  color: white !important;
+  font-size: 25px;
 }
 
 .btn-atomic-tangerine {
@@ -790,7 +819,7 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-  background: #f0a889 !important;
+  background: #f87a40 !important;
   color: white !important;
 }
 
