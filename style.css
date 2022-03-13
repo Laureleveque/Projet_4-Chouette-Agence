@@ -23,7 +23,7 @@ body {
 
 #articles h2 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 #articles a {
@@ -40,6 +40,19 @@ body {
   text-align: center;
   font-size: 18px;
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #articles {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #articles {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 #actualites {
   padding-bottom: 100px;
@@ -49,7 +62,15 @@ body {
 #actualites h2 {
   padding-bottom: 20px;
 }
+#actualites a {
+  color: #575757;
+  font-size: 18px;
+}
 
+#actualites a:hover {
+  text-decoration: none;
+  color: rgb(245, 158, 118);
+}
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -89,7 +110,7 @@ a:hover {
 }
 
 .bloc-lg {
-  padding: 70px 50px;
+  padding: 100px 50px;
 }
 
 .bloc-md {
@@ -97,7 +118,7 @@ a:hover {
 }
 
 .bloc-sm {
-  padding: 40px 50px;
+  padding: 60px 50px;
 }
 
 .bg-center,
