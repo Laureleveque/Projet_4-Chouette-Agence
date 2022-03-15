@@ -16,42 +16,19 @@ body {
   height: 250px;
   margin: auto;
 }
-
-article {
+/*
+#actualites {
   padding: 50px 350px;
 }
-
-article h2 {
+*/
+#actualites h2 {
   text-align: center;
   padding-bottom: 40px;
 }
 
-article a {
+#actualites a {
   font-size: 20px;
   color: #575757;
-}
-
-article a:hover {
-  text-decoration: none;
-  color: rgb(245, 158, 118);
-}
-
-article h3 {
-  text-align: center;
-  font-size: 18px;
-}
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  article {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  article {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 #actualites {
@@ -222,7 +199,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-  color: rgb(245, 158, 118);
+  color: rgb(250, 122, 63);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -860,7 +837,7 @@ h4 {
 }
 
 .white {
-  color: #333333 !important;
+ color:#333333 !important;
   padding-bottom: 20px;
 }
 
@@ -878,8 +855,8 @@ h4 {
 }
 
 .black-background {
-  background-color: #c2b9b9;
-  opacity: 0.8;
+  background-color: #858282;
+  
   padding: 40px 40px;
   text-align: justify;
 }
@@ -907,9 +884,9 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-  background: rgb(245, 158, 118);
+  background: rgb(250, 122, 63) !important;
   color: #ffffff !important;
-  border: 2px solid rgb(245, 158, 118);
+  border: 2px solid rgb(250, 122, 63) !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -923,15 +900,15 @@ h4 {
 }
 
 .ltc-white:hover {
-  color: rgb(245, 158, 118) !important;
+  color: rgb(250, 100, 31) !important;
 }
 
 .ltc-atomic-tangerine {
-  color: rgb(245, 158, 118) !important;
+  color: rgb(250, 100, 31) !important;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: rgb(245, 158, 118) !important;
+  color: rgb(250, 100, 31) !important;
 }
 
 .icon-dark-slate-blue {
