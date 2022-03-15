@@ -17,38 +17,38 @@ body {
   margin: auto;
 }
 
-#articles {
+article {
   padding: 50px 350px;
 }
 
-#articles h2 {
+article h2 {
   text-align: center;
   padding-bottom: 40px;
 }
 
-#articles a {
+article a {
   font-size: 20px;
   color: #575757;
 }
 
-#articles a:hover {
+article a:hover {
   text-decoration: none;
   color: rgb(245, 158, 118);
 }
 
-#articles h3 {
+article h3 {
   text-align: center;
   font-size: 18px;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  #articles {
+  article {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #articles {
+  article {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -71,6 +71,13 @@ body {
   text-decoration: none;
   color: rgb(245, 158, 118);
 }
+
+.image-resize-mode {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -96,7 +103,7 @@ a:hover {
   width: 100%;
   clear: both;
   background: 50% 50% no-repeat;
-  padding: 0px 30px;
+  padding: 0px 50px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -110,7 +117,7 @@ a:hover {
 }
 
 .bloc-lg {
-  padding: 80px 50px;
+  padding: 50px 50px;
 }
 
 .bloc-md {
@@ -118,7 +125,7 @@ a:hover {
 }
 
 .bloc-sm {
-  padding: 60px 0px;
+  padding: 60px 50px;
 }
 
 .bg-center,
@@ -887,7 +894,7 @@ h4 {
 
 .tc-white {
   color: white !important;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .btn-atomic-tangerine {
