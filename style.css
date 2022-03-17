@@ -36,14 +36,13 @@ body {
 
 a,
 button {
-  transition: all 0.3s ease-in-out;
+ 
   outline: none !important;
-  transform: scale(1);
+ 
 }
 
 a:hover {
-  cursor: pointer;
-  transform: scale(1.15);
+  cursor: pointer; 
 }
 
 
@@ -519,6 +518,7 @@ nav .caret {
   margin: 0 5px 5px 0;
 }
 
+
 .btn.pull-right {
   margin: 0 0 5px 5px;
 }
@@ -527,7 +527,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
   color: white;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(250, 100, 31);
 }
 
 button {
@@ -886,7 +886,8 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-  background: #000000 !important;
+  background: rgb(250, 100, 31) !important;
+ 
   color: white !important;
 }
 
@@ -902,8 +903,7 @@ h4 {
 #couleur_btn:hover
 {
   transform: scale(1.15);
-  background: rgb(250, 100, 31);
-  
+  background: rgb(250, 100, 31); 
 }
 
 .ltc-white {
