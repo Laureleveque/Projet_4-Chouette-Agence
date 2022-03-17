@@ -15,11 +15,7 @@ body {
   height: 250px;
   margin: auto;
 }
-/*
-#actualites {
-  padding: 50px 350px;
-}
-*/
+
 #actualites h2 {
   text-align: center;
   padding-bottom: 40px;
@@ -396,8 +392,11 @@ a:hover {
 .nav > li {
   float: left;
   margin-top: 4px;
-  font-size: 16px;
+  font-size: 18px;
+
 }
+ 
+
 
 .navbar-nav .open .dropdown-menu > li > a {
   text-align: inherit;
@@ -421,6 +420,7 @@ a:hover {
 .navbar-toggle .icon-bar {
   background-color: rgba(0, 0, 0, 0.5);
   width: 26px;
+  
 }
 
 .nav-invert .navbar .nav {
@@ -547,11 +547,14 @@ button {
 
 .icon-md {
   font-size: 30px !important;
+  
 }
 
 .icon-lg {
   font-size: 60px !important;
+  transform: scale(1);
 }
+
 
 .sm-shadow {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -875,6 +878,7 @@ h4 {
   font-size: 35px;
 }
 
+
 .btn-atomic-tangerine {
   color: #ffffff !important;
   border: 3px solid #333333 !important;
@@ -884,6 +888,22 @@ h4 {
 .btn-atomic-tangerine:hover {
   background: #000000 !important;
   color: white !important;
+}
+
+
+#couleur_btn
+{
+  border: 3px solid  rgb(250, 100, 31);
+  background:  rgb(250, 100, 31);
+  transform: scale(1);
+  color: #ffffff;
+}
+
+#couleur_btn:hover
+{
+  transform: scale(1.15);
+  background: rgb(250, 100, 31);
+  
 }
 
 .ltc-white {
@@ -963,6 +983,7 @@ h4 {
 @media (max-width: 991px) {
   .container {
     width: 100%;
+    
   }
   .b-parallax {
     background-attachment: scroll;
@@ -1022,7 +1043,7 @@ margin:0px;
   }
   .navbar .nav {
     padding-top: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    
     float: none !important;
   }
   .navbar.row {
@@ -1037,8 +1058,7 @@ margin:0px;
   }
   .nav > li {
     margin-top: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.05);
+    
     text-align: left;
     padding-left: 15px;
     width: 100%;
@@ -1123,7 +1143,7 @@ margin:0px;
     margin-top: 30px;
   }
   form {
-    padding: 5px;
+    padding: 10px;
   }
   .close-lightbox {
     display: inline-block;
@@ -1148,7 +1168,8 @@ margin:0px;
 }
 
 @media (max-width: 767px) {
-  .bloc-mob-center-text {
+  .bloc-mob-center-text 
+  {
     text-align: center;
   }
 }
