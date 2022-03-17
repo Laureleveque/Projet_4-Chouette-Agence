@@ -296,7 +296,15 @@ a:hover {
 .l-bloc h6 a,
 .l-bloc p a {
   color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
 }
+
+.nav_item
+{
+  padding-right: 20px;
+}
+
+
 
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
@@ -364,8 +372,8 @@ a:hover {
   font-size: 25px;
   font-weight: normal;
   font-weight: 600;
-  line-height: 44px;
 }
+
 
 .navbar-brand img {
   max-height: 200px;
@@ -380,13 +388,14 @@ a:hover {
 .nav-center .navbar-brand img {
   margin: 0;
 }
-
+/*
 .navbar .nav {
   padding-top: 2px;
   margin-right: -16px;
   float: right;
   z-index: 1;
 }
+*/
 
 .nav > li {
   float: left;
@@ -433,12 +442,18 @@ a:hover {
   z-index: 2;
 }
 
+#position
+{
+  margin-right: 80px;
+}
+
 @media (min-width: 768px) {
   .site-navigation {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 20px;
-    transform: translate(0, -50%);
+    margin-right: 60px; 
+    transform: translate(0,-50%);
     -webkit-transform: translateY(-50%);
   }
   .nav > li .dropdown-menu a,
@@ -881,13 +896,13 @@ h4 {
 
 .btn-atomic-tangerine {
   color: #ffffff !important;
-  border: 3px solid #333333 !important;
+  
   background:#333333;
 }
 
 .btn-atomic-tangerine:hover {
   background: rgb(250, 100, 31) !important;
- 
+  
   color: white !important;
 }
 
@@ -1089,6 +1104,7 @@ margin:0px;
   }
   .navbar-collapse {
     padding: 0;
+    
     overflow-x: hidden;
     -webkit-box-shadow: none;
     box-shadow: none;
